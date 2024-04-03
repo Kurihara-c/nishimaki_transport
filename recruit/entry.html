@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードの指定 UTF-8を指定します -->
+    <meta charset="UTF-8" />
+    <!-- レスポンシブ表示のための記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定 -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- 検索にヒットしないようにするための記述 -->
+    <meta name="robots" content="noindex" />
+    <!-- サイトのタイトルを記述 -->
+    <title>エントリーフォーム| 株式会社西巻運輸</title>
+    <!-- サイトの概要を記述 -->
+    <meta
+      name="description"
+      content="安全性と信頼性に重点を置き、顧客のニーズに最適な物流ソリューションを提供する株式会社西巻運輸の採用サイトです。"
+    />
+    <!-- Google Fontsを読み込みための記述 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- スタイルシートの読み込みのための記述 -->
+    <link rel="stylesheet" href="../assets/css/style.css?ver=20240321" />
+  </head>
+  <body>
+    <header class="l-header is-white">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo">
+          <a href="../index.html"><img src="../assets/img/logo.svg" alt="西巻運輸" /></a>
+        </h1>
+        <nav class="l-header__nav">
+          <ul class="l-header__nav-list">
+            <li class="l-header__list-item"><a href="../index.html#mission">Mission&Vision</a></li>
+            <li class="l-header__list-item"><a href="../index.html#message">Message</a></li>
+            <li class="l-header__list-item"><a href="../index.html#job">Job List</a></li>
+            <li class="l-header__list-item">
+              <button class="c-button c-button--secondary js-modal-open">MY PAGEはこちら</button>
+            </li>
+            <li class="l-header__list-item">
+              <div class="l-header__list-item-button">
+                <a class="c-button c-button--primary" href="../recruit/entry.html">エントリーはこちら</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <button id="js-drawer-icon" class="p-drawer-open p-drawer-icon">
+          <span class="p-drawer-icon__bar"></span>
+          <span class="p-drawer-icon__bar"></span>
+          <span class="p-drawer-icon__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="js-drawer-content" class="p-drawer-content">
+      <ul class="p-drawer-content__menu">
+        <li class="l-drawer__list-item"><a href="../index.html#mission" class="p-drawer-content__link">Mission&Vision</a></li>
+        <li class="l-drawer__list-item"><a href="../index.html#message" class="p-drawer-content__link">Message</a></li>
+        <li class="l-drawer__list-item"><a href="../index.html#job" class="p-drawer-content__link">Job List</a></li>
+        <li class="l-drawer__list-item">
+          <button class="c-button c-button--secondary js-modal-open">MY PAGEはこちら</button>
+        </li>
+        <li class="l-drawer__list-item">
+          <div class="l-drawer__list-item-button">
+            <a class="c-button c-button--primary" href="../recruit/entry.html">エントリーはこちら</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="js-drawer-overlay" class="p-drawer-overlay"></div>
+
+    <dialog id="js-login-modal" class="p-login__modal">
+      <div class="p-login__inner">
+        <div class="p-login__close">
+          <button class="p-login__close-button js-modal-close">
+            <img src="../assets/img/modal_close.svg" alt="モーダルを閉じる" />
+          </button>
+        </div>
+        <h3 class="p-login__title">MY PAGE-ログイン</h3>
+
+        <form class="p-login__form">
+          <div class="p-login__form-item">
+            <span class="p-login__form-tag">メールアドレス</span>
+            <label for="login-email">
+              <input type="email" id="login-email" placeholder="例） example@example.com" autocomplete="email" required />
+            </label>
+          </div>
+          <div class="p-login__form-item">
+            <span>パスワード</span>
+            <label for="login-password">
+              <input type="password" id="login-password" autocomplete="current-password" required />
+            </label>
+          </div>
+        </form>
+        <div class="p-login__button">
+          <button class="c-button--login">サインイン</button>
+        </div>
+        <div class="p-login__entry">
+          <a href="../recruit/entry.html">新規登録はこちら</a>
+        </div>
+      </div>
+    </dialog>
+
+    <main>
+      <section class="p-entry">
+        <div class="p-entry__inner">
+          <div class="p-contact__box">
+            <h2 class="p-contact__box-title">中途採用<span class="p-contact__box-title-color">エントリーフォーム</span></h2>
+            <p class="p-contact__box-text">
+              弊社にご興味をお持ちいただき、ありがとうございます。<br />
+              下記をご入力の上、送信ください。
+            </p>
+            <form
+              id="form"
+              class="p-contact__form FormArea"
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMKZvRik8Rq2j4AcZhH_oZ3SDno5BpmsQtg-a5OdCVg_KoVg/formResponse"
+              target="hidden_iframe"
+              onsubmit="submitted=true;"
+            >
+              <div class="p-contact__fields">
+                <!-- お名前  -->
+                <div class="p-contact__field">
+                  <div class="p-form__field">
+                    <div class="p-form__field-head">
+                      <span class="p-form__field-tag">必須</span>
+                      <label for="your-name" class="p-form__field-label">お名前</label>
+                    </div>
+                    <div class="p-form__field-item">
+                      <input
+                        class="p-form-text"
+                        type="text"
+                        name="entry.782428637"
+                        id="your-name"
+                        placeholder="例）長谷川　太郎"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- ご年齢  -->
+                <div class="p-contact__field">
+                  <div class="p-form__field">
+                    <div class="p-form__field-head">
+                      <span class="p-form__field-tag">必須</span>
+                      <label for="your-age" class="p-form__field-label">ご年齢</label>
+                    </div>
+                    <div class="p-form__field-item">
+                      <input
+                        class="p-form-text p-form-text--short"
+                        type="text"
+                        name="entry.1478878073"
+                        id="your-age"
+                        placeholder="例）32"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- メールアドレス  -->
+                <div class="p-contact__field">
+                  <div class="p-form__field">
+                    <div class="p-form__field-head">
+                      <span class="p-form__field-tag">必須</span>
+                      <label for="your-email" class="p-form__field-label">メールアドレス</label>
+                    </div>
+                    <div class="p-form__field-item">
+                      <input
+                        class="p-form-text"
+                        type="email"
+                        name="entry.1581072532"
+                        id="your-email"
+                        placeholder="例）example@example.com"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- 応募職種  -->
+                <div class="p-contact__field">
+                  <div class="p-form__field">
+                    <div class="p-form__field-head">
+                      <span class="p-form__field-tag">必須</span>
+                      <div class="p-form__field-label">応募職種</div>
+                    </div>
+                    <div class="p-form__field">
+                      <div class="p-form__field-item">
+                        <div class="p-form__field-radios">
+                          <label for="occupation" class="p-form-field__radio p-from-radio">
+                            <input
+                              class="p-from-radio__input"
+                              type="radio"
+                              name="entry.108238858"
+                              value="小型トラックドライバー"
+                              id="occupation"
+                              checked
+                              required
+                            />
+                            <span class="p-from-radio__text">小型トラックドライバー</span>
+                          </label>
+                          <label class="form-field__radio from-radio">
+                            <input
+                              class="p-from-radio__input"
+                              type="radio"
+                              name="entry.108238858"
+                              value="中型トラックドライバー"
+                            />
+                            <span class="p-from-radio__text">中型トラックドライバー</span>
+                          </label>
+                          <label class="p-form-field__radio p-from-radio">
+                            <input class="p-from-radio__input" type="radio" name="entry.108238858" value="配送管理" />
+                            <span class="p-from-radio__text">配送管理</span>
+                          </label>
+                          <label class="p-form-field__radio p-from-radio">
+                            <input class="p-from-radio__input" type="radio" name="entry.108238858" value="営業事務" />
+                            <span class="p-from-radio__text">営業事務</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 希望年収  -->
+                <div class="p-contact__field">
+                  <div class="p-form__field">
+                    <div class="p-form__field-head">
+                      <span class="p-form__field-tag">必須</span>
+                      <label for="salary" class="p-form__field-label">希望年収</label>
+                    </div>
+                    <div class="p-form__field-item">
+                      <input class="p-form-text p-form-text--short" type="text" name="entry.1398402419" id="salary" required />
+                    </div>
+                  </div>
+                </div>
+                <!-- 実績  -->
+                <div class="p-contact__field">
+                  <div class="p-form__field">
+                    <div class="p-form__field-head">
+                      <span class="p-form__field-tag p-form__field-tag--gray">必須</span>
+                      <label for="your-work" class="p-form__field-label">資格・免許</label>
+                    </div>
+                    <div class="p-form__field-item">
+                      <p class="p-form__field-item-text">
+                        <span>お持ちの資格や運転免許があれば、</span>
+                        <span>ご記載をお願いいたします。</span>
+                      </p>
+                      <textarea
+                        class="p-form-textarea p-form-textarea--large"
+                        name="entry.962192676"
+                        id="your-work"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- 学歴  -->
+                <div class="p-contact__field">
+                  <div class="p-form__field">
+                    <div class="p-form__field-head">
+                      <span class="p-form__field-tag">必須</span>
+                      <label for="your-background" class="p-form__field-label">職歴</label>
+                    </div>
+                    <div class="p-form__field-item">
+                      <p class="p-form__field-item-text">簡潔に職歴をご記載ください。</p>
+                      <textarea
+                        class="p-form-textarea"
+                        name="entry.2063486007"
+                        id="your-background"
+                        cols="30"
+                        rows="10"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- 自己PR  -->
+                <div class="p-contact__field">
+                  <div class="p-form__field">
+                    <div class="p-form__field-head">
+                      <span class="p-form__field-tag">必須</span>
+                      <label for="pr" class="p-form__field-label">自己PR</label>
+                    </div>
+                    <div class="p-form__field-item">
+                      <p class="p-form__field-item-text">簡単で結構ですので、<span>あなたのPRポイントをご記載下さい。</span></p>
+                      <textarea class="p-form-textarea" name="entry.1492159727" id="pr" cols="30" rows="10" required></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-form__checkbox">
+                <label class="p-form__checkbox-label" for="check">
+                  <input class="p-form__checkbox-input" type="checkbox" id="check" name="subscribe" value="privacy" required />
+                  <span class="form__checkbox-text"
+                    ><a href="#" target="_blank"><span class="p-form__checkbox-link">個人情報保護方針</span></a
+                    >に同意する</span
+                  >
+                </label>
+              </div>
+              <div class="p-form__button">
+                <input type="submit" value="エントリーする" class="c-button c-button--entry" id="js-submit" disabled />
+              </div>
+            </form>
+            <p class="u-submit-message__end">
+              エントリー頂きありがとうございます。<br />
+              3営業日以内に担当からご連絡いたします。
+            </p>
+            <p class="u-submit-message__false">送信に失敗しました。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <div class="l-footer__logo">
+          <img src="../assets/img/logo_footer.png" alt="西巻運輸" />
+        </div>
+        <small class="l-footer__copyright">
+          Copyright&copy;&nbsp;Nishimaki&nbsp;GROUP&nbsp;co.,Ltd.&nbsp;All&nbsp;Rights&nbsp;Reserved.
+        </small>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../assets/js/sqript.js"></script>
+  </body>
+</html>

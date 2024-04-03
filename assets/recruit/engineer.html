@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードの指定 UTF-8を指定します -->
+    <meta charset="UTF-8" />
+    <!-- レスポンシブ表示のための記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定 -->
+    <link rel="" href="./favicon.ico" type="image/x-icon" />
+    <!-- 検索にヒットしないようにするための記述 -->
+    <meta name="robots" content="noindex" />
+    <!-- サイトのタイトルを記述 -->
+    <title>Webエンジニア職| 株式会社Igatta Group(イガッタグループ)</title>
+    <!-- サイトの概要を記述 -->
+    <meta name="description" content="Webマーケティングを中心にクライアントの売上向上に特化した精鋭集団、株式会社Igatta Groupの採用サイトです。" />
+    <!-- Google Fontsを読み込みための記述 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- スタイルシートの読み込みのための記述 -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header id="js-header" class="l-header is-white">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo">
+          <a href="../index.html"><img src="../img/logo.svg" alt="" /></a>
+        </h1>
+        <nav class="l-header__nav">
+          <ul class="l-header__nav-list">
+            <li class="l-header__list-item"><a href="">Mission&Vision</a></li>
+            <li class="l-header__list-item"><a href="">Message</a></li>
+            <li class="l-header__list-item"><a href="">Job List</a></li>
+            <li class="l-header__list-item">
+              <button class="c-button c-button--secondary js-modal-open">MY PAGEはこちら</button>
+            </li>
+            <li class="l-header__list-item">
+              <button class="c-button c-button--primary" href="../entry.html"><a href="..entry.html">エントリーはこちら</a></button>
+            </li>
+          </ul>
+        </nav>
+          <button id="js-drawer-icon" class="header__open drawer-icon">
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="js-drawer-content" class="p-drawer-content">
+      <ul class="p-drawer-content__menu">
+        <li class="l-header__list-item"><a href="#about" class="p-drawer-content__link">Mission&Vision</a></li>
+        <li class="l-header__list-item"><a href="#how-to-use" class="p-drawer-content__link">Message</a></li>
+        <li class="l-header__list-item"><a href="#merit" class="p-drawer-content__link">Job List</a></li>
+            <li class="l-header__list-item">
+              <button class="c-button c-button--secondary js-modal-open">MY PAGEはこちら</button>
+            </li>
+            <li class="l-header__list-item">
+              <button class="c-button c-button--primary" href="../entry.html"><a href="..entry.html">エントリーはこちら</a></button>
+            </li>
+      </ul>
+    </div>
+
+    <dialog id="js-login-modal" class="p-login__modal">
+      <div class="p-login__inner">
+        <div class="p-login__close">
+          <button class="p-login__close-button js-modal-close">
+            <img src="../assets/img/modal_close.svg" alt="モーダルを閉じる" />
+          </button>
+        </div>
+        <h3 class="p-login__title">MY PAGE-ログイン</h3>
+
+        <form class="p-login__form">
+          <div class="p-login__form-item">
+            <span class="p-login__form-tag">メールアドレス</span>
+            <label for="">
+              <input type="email" placeholder="例） example@example.com" />
+            </label>
+          </div>
+          <div class="p-login__form-item">
+            <span>パスワード</span>
+            <label for="">
+              <input type="password" />
+            </label>
+          </div>
+        </form>
+        <div class="p-login__button">
+          <button class="c-button--login">サインイン</button>
+        </div>
+        <div class="p-login__entry">
+          <a href="../entry.html">新規登録はこちら</a>
+        </div>
+      </div>
+    </dialog>
+
+
+    <div class="p-recruit__mv">
+      <div class="p-recruit__mv-inner">
+        <div class="p-recruit__mv-img">
+          <img src="./assets/img/engineer.jpg" alt="" width="862" height="534" />
+          <p class="p-recruit__mv-title">Webエンジニア職</p>
+        </div>
+      </div>
+      <div class="p-recruit__mv-title-wrapper">
+        <p class="p-recruit__mv-text">
+          弊社のWebエンジニアはフロントからバックエンドまで広く対応します。<br />
+          基本的にサイト・システムの実装のみならず、要件定義フェーズから関わります。<br />
+          HTMLコーディングはWebデザイナーが構築している場合もありますが、より複雑なJavaScript.PHPの実装、ECサイトの機能実装をメインに行います。<br />
+          他社と比較して、フルスタックエンジニアを目指しやすい環境と言えます。
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <section class="p-recruit__about">
+        <div class="p-recruit__about-inner l-innner">
+          <h2 class="p-recruit__about-heading">募集要項</h2>
+          <table class="p-recruit__about-table p-recruit-table">
+            <tr>
+              <th class="p-recruit-table-title">職務内容</th>
+              <td class="p-recruit-table-text">
+                <ul>
+                  <li>・案件の要件定義</li>
+                  <li>・HTML,CSS,JavaScriptなどのコーディング</li>
+                  <li>・Vue.js,Reactなどのフロントエンド</li>
+                  <li>・PHP,WordPress,Cake.php,EC CUBEなどのバックエンド</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="p-recruit-table-title">応募資格</th>
+              <td class="p-recruit-table-text">
+                <span>必須要件</span><br />
+                なし<br />
+                <span>歓迎要件</span><br />
+                <ul>
+                  <li>・中規模以上のサイトの運用や新規構築経験</li>
+                  <li>・クライアント企業との折衝経験</li>
+                  <li>・受託制作業務やプロジェクトチームでの実務経験</li>
+                  <li>・アクセス解析などでのWebサイトの改善提案経験</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="p-recruit-table-title">求める人物像・スキル</th>
+              <td class="p-recruit-table-text">
+                【必須スキル・経験】<br />
+                <li>・なし、未経験者歓迎！</li>
+                【歓迎するスキル・経験】<br />
+                <ul>
+                  <li>・Webサイトやシステムの公開経験</li>
+                  <li>・OSSへの貢献や技術書の執筆</li>
+                  <li>・Gitを使ったチーム開発</li>
+                </ul>
+                【求める人物像】<br />
+                <ul>
+                  <li>・コミュニケーション能力の高い方</li>
+                  <li>・主体的に業務に取り組める方</li>
+                  <li>・トライアンドエラーをすることに対して適応性のある方</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="p-recruit-table-title">初任給</th>
+              <td class="p-recruit-table-text">240,000円～500,000円（本人の能力・経験次第で変化します）</td>
+            </tr>
+            <tr>
+              <th class="p-recruit-table-title">勤務時間</th>
+              <td class="p-recruit-table-text">フレックス勤務 37.5時間/週（コアタイムなし）リモート勤務可（条件あり）</td>
+            </tr>
+            <tr>
+              <th class="p-recruit-table-title">昇給</th>
+              <td class="p-recruit-table-text">年2回</td>
+            </tr>
+            <tr>
+              <th class="p-recruit-table-title">休日休暇</th>
+              <td class="p-recruit-table-text">
+                週休2日制（土・日）、祝日、創立記念日（10月20日）、夏期・年末年始休暇（各7～9連休）、<br />
+                年次有給休暇（初年度10日、1時間単位で取得可）、リフレッシュ休暇、特別休暇※年間休日129日（2023年度）
+              </td>
+            </tr>
+            <tr>
+              <th class="p-recruit-table-title">福利厚生</th>
+              <td class="p-recruit-table-text">
+                <ul>
+                  <li>・各種社会保険完備（雇用・労災・健康・厚生年金）</li>
+                  <li>・交通費（30,000円迄）</li>
+                  <li>・住宅手当（上限50,000円）</li>
+                  <li>・書籍購入し放題（書籍の購入を全額負担します）</li>
+                  <li>・社員同士のシャッフルランチ代全額補助</li>
+                  <li>・社員旅行（過去実績：グアム、タイ、ハワイ、バリ島、ベトナム、ラスベガス）</li>
+                  <li>・オフィスおかん（毎日300円分のランチが無料で食べられます）</li>
+                  <li>・ドリンク無料</li>
+                  <li>・デュアルディスプレイ完備</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <section class="p-cta">
+      <div class="p-cta__inner l-inner">
+        <div class="p-cta__logo">
+          <img src="./assets/img/cta_logo.svg" alt="" />
+        </div>
+        <h3 class="p-cta__lead">熱い気持ちを持った方、募集しています。</h3>
+        <p class="p-cta__text">
+          まずはカジュアルランチから。皆様の就活の思い、悩みの相談に乗ります。<br />
+          また弊社のオフィスツアー・社員との座談会も行います。<br />
+          価値観が会えば、面接に起こしいただけると幸いです
+        </p>
+        <div class="p-cta__button">
+          <a class="c-button c-button--cta" href="">エントリーはこちら</a>
+        </div>
+      </div>
+    </section>
+
+<footer class="l-footer">
+  <div class="l-footer__inner">
+    <div class="l-footer__logo">
+      <img src="./assets/img/logo.svg" alt="Igatta Group" />
+    </div>
+    <small class="l-footer__copyright">
+      Copyright&copy;&nbsp;IGATTA&nbsp;GROUP&nbsp;co.,Ltd.&nbsp;All&nbsp;Rights&nbsp;Reserved.
+    </small>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./assets/js/sqript.js"></script>
+</body>
+</html>

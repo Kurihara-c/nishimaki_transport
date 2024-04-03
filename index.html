@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードの指定 UTF-8を指定します -->
+    <meta charset="UTF-8" />
+    <!-- レスポンシブ表示のための記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定 -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- 検索にヒットしないようにするための記述 -->
+    <meta name="robots" content="noindex" />
+    <!-- サイトのタイトルを記述 -->
+    <title>採用情報 | 株式会社西巻運輸</title>
+    <!-- サイトの概要を記述 -->
+    <meta
+      name="description"
+      content="安全性と信頼性に重点を置き、顧客のニーズに最適な物流ソリューションを提供する株式会社西巻運輸の採用サイトです。"
+    />
+    <!-- Google Fontsを読み込みための記述 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- スタイルシートの読み込みのための記述 -->
+    <link rel="stylesheet" href="./assets/css/style.css?ver=20240324" />
+    <!-- OGP -->
+    <meta property="og:type" content="website" />
+    <!-- TOPページ以外はarticle -->
+    <meta property="og:title" content="採用情報 | 株式会社西巻運輸" />
+    <meta property="og:site_name" content="採用情報 | 株式会社西巻運輸" />
+    <meta property="og:url" content="nishimaki_transport" />
+    <meta property="og:image" content="https://serika-log.pya.jp/nishimaki_transport/assets/img/ogp.jpg" />
+    <meta
+      property="og:description"
+      content="安全性と信頼性に重点を置き、顧客のニーズに最適な物流ソリューションを提供する株式会社西巻運輸の採用サイトです。"
+    />
+  </head>
+  <body>
+    <div class="p-loading">
+      <img class="p-loading__logo" src="./assets/img/logo_mark.png" alt="西巻運輸のロゴマーク" />
+    </div>
+    <header id="js-header" class="l-header">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo">
+          <a href="./index.html"><img src="./assets/img/logo.svg" alt="西巻運輸" /></a>
+        </h1>
+        <nav class="l-header__nav">
+          <ul class="l-header__nav-list">
+            <li class="l-header__list-item"><a href="./index.html#mission">Mission&Vision</a></li>
+            <li class="l-header__list-item"><a href="./index.html#message">Message</a></li>
+            <li class="l-header__list-item"><a href="./index.html#job">Job List</a></li>
+            <li class="l-header__list-item">
+              <button class="c-button c-button--secondary js-modal-open">MY PAGEはこちら</button>
+            </li>
+            <li class="l-header__list-item">
+              <div class="l-header__list-item-button">
+                <a class="c-button c-button--primary" href="./recruit/entry.html">エントリーはこちら</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <button id="js-drawer-icon" class="p-drawer-open p-drawer-icon">
+          <span class="p-drawer-icon__bar"></span>
+          <span class="p-drawer-icon__bar"></span>
+          <span class="p-drawer-icon__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="js-drawer-content" class="p-drawer-content">
+      <ul class="p-drawer-content__menu">
+        <li class="l-drawer__list-item"><a href="#mission" class="p-drawer-content__link">Mission&Vision</a></li>
+        <li class="l-drawer__list-item"><a href="#message" class="p-drawer-content__link">Message</a></li>
+        <li class="l-drawer__list-item"><a href="#job" class="p-drawer-content__link">Job List</a></li>
+        <li class="l-drawer__list-item">
+          <button class="c-button c-button--secondary js-modal-open">MY PAGEはこちら</button>
+        </li>
+        <li class="l-drawer__list-item">
+          <div class="l-drawer__list-item-button">
+            <a class="c-button c-button--primary" href="./recruit/entry.html">エントリーはこちら</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="js-drawer-overlay" class="p-drawer-overlay"></div>
+
+    <dialog id="js-login-modal" class="p-login__modal">
+      <div class="p-login__inner">
+        <div class="p-login__close">
+          <button class="p-login__close-button js-modal-close">
+            <img src="./assets/img/modal_close.svg" alt="モーダルを閉じる" />
+          </button>
+        </div>
+        <h3 class="p-login__title">MY PAGE-ログイン</h3>
+
+        <form id="login-form" class="p-login__form">
+          <div class="p-login__form-item">
+            <span class="p-login__form-tag">メールアドレス</span>
+            <label for="login-email">
+              <input type="email" id="login-email" placeholder="例） example@example.com" autocomplete="email" required />
+            </label>
+          </div>
+          <div class="p-login__form-item">
+            <span>パスワード</span>
+            <label for="login-password">
+              <input type="password" id="login-password" autocomplete="current-password" required />
+            </label>
+          </div>
+        </form>
+        <div class="p-login__button">
+          <button id="js-login" class="c-button--login">サインイン</button>
+        </div>
+        <div class="p-login__entry">
+          <a href="./recruit/entry.html">新規登録はこちら</a>
+        </div>
+      </div>
+    </dialog>
+
+    <main>
+      <div class="p-mv">
+        <div class="p-mv__bg">
+          <div class="p-mv__bg-img"></div>
+          <div class="p-mv__bg-img"></div>
+          <div class="p-mv__bg-img"></div>
+        </div>
+        <div class="p-mv__lead">
+          <img src="./assets/img/mv_lead.png" alt="夢を運ぶ未来の旅路へ、今すぐ飛び立とう" />
+        </div>
+      </div>
+
+      <section id="mission" class="p-mission u-separate">
+        <div class="p-mission__inner l-inner">
+          <h2 class="p-mission__heading c-section-heading">西巻運輸のミッション・<span>ビジョン</span></h2>
+          <div class="p-mission__boxes">
+            <div class="p-mission__box">
+              <div class="p-mission__box-title">
+                <img src="./assets/img/mission.png" alt="Mission" />
+              </div>
+              <h3 class="p-mission__box-lead">
+                未来のビジネスを創る、<br />
+                クライアントの運送パートナーとして共に成功を
+              </h3>
+              <p class="p-mission__box-text">
+                私たちは、安全性と信頼性に重点を置き、顧客のニーズに最適な物流ソリューションを提供することを使命としています。<br />
+                このミッションを通じて、私たちはお客様や社会に価値を提供し、物流業界のリーディングカンパニーとして成長し続けます。
+              </p>
+            </div>
+            <div class="p-mission__box">
+              <div class="p-mission__box-title">
+                <img src="./assets/img/vision.png" alt="Vision" />
+                <!-- <p>vision</p> -->
+              </div>
+              <h3 class="p-mission__box-lead">
+                <span>日本の魅力を運送で輝かせる</span><br />
+                <span>西巻運輸が目指す社会を創る</span>
+              </h3>
+              <p class="p-mission__box-text">
+                私たちのビジョンは、常に進化し続ける物流業界でリーダーシップを発揮し、顧客、社会、環境に価値を提供することです。<br />
+                地域社会との協力関係を強化し、社会的責任を果たしながら、共に成長していくパートナーシップを築きます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="message" class="p-message u-separate">
+        <h2 class="p-message__heading c-section-heading">社長メッセージ</h2>
+        <div class="p-message__content-bg">
+          <div class="p-message__content">
+            <p class="p-message__content-lead">未来を走り抜ける、<span>革新の軌跡。</span></p>
+            <p class="-message__content-text">
+              私たちのルーツは、創業者が一台のトラックと強い信念を持って出発した小さな会社から始まります。<br />
+              創業当初から、私たちは顧客の信頼を得ることを最優先に考えてきました。<br />
+              丁寧で迅速なサービスと、常に安全を最優先にした輸送方法を提供することに努め、多くのお客様からの支持をいただいてきました。<br />
+              時代が変わり、技術が進歩しても、私たちの使命は変わりません。<br />
+              常にお客様のニーズに応え、より良いサービスを提供するために努力し続けます。<br />
+              単なる物流の提供だけでなく、お客様との信頼関係の築き上げ、地域社会への貢献、そして夢と情熱を追求する姿勢にあります。<br />
+              これからも、私たちは誠実さと責任感を持って、より良い未来を築くために邁進していきます。
+            </p>
+          </div>
+          <div class="p-message__personal">
+            <p class="p-message__personal-title">代表取締役社長</p>
+            <div class="p-message__personal-name">
+              <img src="./assets/img/ceo_name.png" alt="西巻吉茂" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="job" class="p-job u-separate">
+        <h2 class="p-job__heading c-section-heading">募集職種一覧</h2>
+        <p class="job__lead">それぞれの募集職種の詳細は<span>個別ページで解説しています。</span></p>
+        <div class="p-job__inner">
+          <ul class="p-job__cards">
+            <li class="p-jpb-card">
+              <a href="./recruit/small_driver.html">
+                <div class="p-job-card__img">
+                  <img src="./assets/img/small_truck_driver.jpg" alt="小型トラックを運転する女性" />
+                </div>
+                <div class="p-job-card__contents">
+                  <div class="p-job__card-inner">
+                    <p class="p-job-card__title">小型ドライバー</p>
+                    <p class="p-job-card__text">小さなエリアの各目的地への配送を行います。</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="p-jpb-card">
+              <a href="./recruit/medium_driver.html">
+                <div class="p-job-card__img">
+                  <img src="./assets/img/medium_truck_driver.jpg" alt="中型トラックを運転する男性" />
+                </div>
+                <div class="p-job-card__contents">
+                  <div class="p-job__card-inner">
+                    <p class="p-job-card__title">中型ドライバー</p>
+                    <p class="p-job-card__text">中距離走行にて各主要都市への配送を行います。</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="p-jpb-card">
+              <a href="./recruit/management.html">
+                <div class="p-job-card__img">
+                  <img src="./assets/img/management.jpg" alt="荷物のチェックを行う配送管理者" />
+                </div>
+                <div class="p-job-card__contents">
+                  <div class="p-job__card-inner">
+                    <p class="p-job-card__title">配送管理</p>
+                    <p class="p-job-card__text">荷物に出荷伝票や納品書を添付し、トラックドライバーの手配を行います。</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="p-jpb-card">
+              <a href="./recruit/office_work.html">
+                <div class="p-job-card__img">
+                  <img src="./assets/img/office_work.jpg" alt="パソコンで作業をする女性と男性" />
+                </div>
+                <div class="p-job-card__contents">
+                  <div class="p-job__card-inner">
+                    <p class="p-job-card__title">営業事務</p>
+                    <p class="p-job-card__text">問い合わせ対応や、見積書・納品書などの各書類の作成を行います。</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="p-cta">
+        <div class="p-cta__inner l-inner">
+          <div class="p-cta__logo">
+            <img src="./assets/img/cta_logo.png" alt="西巻運輸のロゴマーク" />
+          </div>
+          <h3 class="p-cta__lead">熱い気持ちを持った方、<span>募集しています。</span></h3>
+          <p class="p-cta__text">
+            まずはカジュアルランチから。<span>皆様の就活の思い、</span><span>悩みの相談に乗ります。</span><br />
+            また弊社のオフィスツアー・<span>社員との座談会も行います。</span><br />
+            価値観が会えば、<span>面接に起こしいただけると幸いです</span>
+          </p>
+          <div class="p-cta__button">
+            <a class="c-button c-button--cta" href="./recruit/entry.html">エントリーはこちら</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <div class="l-footer__logo">
+          <img src="./assets/img/logo_footer.png" alt="西巻運輸" />
+        </div>
+        <small class="l-footer__copyright">
+          Copyright&copy;&nbsp;Nishimaki&nbsp;GROUP&nbsp;co.,Ltd.&nbsp;All&nbsp;Rights&nbsp;Reserved.
+        </small>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/sqript.js"></script>
+  </body>
+</html>
